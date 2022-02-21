@@ -166,7 +166,7 @@ header.sticky ul li a{
     .logo{
         display: none;
     }
-}
+
 
 /*-------------------head---------------------*/
 header.sticky{
@@ -214,4 +214,188 @@ header li {
 .hamburger{
     display: block;
     cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+   }
+}
+
+
+/*-----------------home----------------*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+}
+.home{
+    background-image: url(../image/home.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.home h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 150px;
+    color: whitesmoke;
+    padding-top: 10%;
+}
+
+.home h1:hover{
+    color: #b9cedf;
+    cursor: pointer;
+}
+
+.home p{
+    color: whitesmoke;
+}
+
+.home .content{
+    text-align: left;
+    color: black;
+    margin-top: 7%;
+}
+
+.home .box{
+    background: rgb(214, 241, 253);
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.home input{
+    margin-top: 10px;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: rgb(214, 241, 253);
+}
+
+button{
+    background: #CC8C18;
+    color: white;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button i{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+button span{
+    margin-top: 5px;
+}
+
+
+/*-------------home--------------*/
+/*------------about--------------*/
+
+.top{
+    margin-top: 80px;
+}
+
+.mtop{
+    text-align: center;
+}
+
+.headding{
+    text-align: center;
+}
+
+.headding h5{
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #CC8C18;
+    padding-top: 20px;
+}
+
+.headding h2{
+    color: #24416B;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+}
+
+.left .right{
+    width: 50%;
+}
+
+h3{
+    font-size: 35px;
+    font-family: serif;
+    color: #24416B;
+    margin-bottom: 20px;
+}
+
+.about .left{
+    padding: 20px;
+}
+
+p{
+    line-height: 30px;
+    color: #a4a4a4;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.about{
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.about .right{
+    position: relative;
+}
+
+.about .right::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #CC8C18;
+    width: 92%;
+    height: 61vh;
+    z-index: -1;
+    margin: 50px;
+}
+
+.about::before{
+    content: '';
+    position: absolute;
+    bottom: -5;
+    left: 0;
+    background-image: url(../image/line2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+}
+
+/*---------abpout----------------*/
+/*-------------wrapper------------*/
+
+.wrapper{
+    background-image: url("../image/w.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
