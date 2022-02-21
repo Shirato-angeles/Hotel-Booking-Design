@@ -399,3 +399,8 @@ p{
     background-position: center;
     background-size: cover;
 }
+
+.wrapper .container {
+    max-width: 50%;
+    margin: auto;
+}
